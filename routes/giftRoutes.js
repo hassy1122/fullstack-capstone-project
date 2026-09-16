@@ -1,6 +1,6 @@
 const express = require('express');
 const { ObjectId } = require('mongodb');
-const { connectToDatabase } = require('./db');
+const { connectToDatabase } = require('../models/db');
 const { authenticateToken } = require('./authRoutes');
 
 const router = express.Router();
