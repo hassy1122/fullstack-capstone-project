@@ -1,7 +1,7 @@
-cURL Command:
+Terminal Command:
 curl -X GET http://localhost:3000/api/gifts
 
-Output:
+Terminal Output:
 [
   {"_id":"6aaacabbaccd0526e1e851e6","title":"Vintage Wooden Bookshelf","description":"Solid oak bookshelf with three shelves. Some minor scratches but overall in great condition. Perfect for a home office or living room.","category":"Furniture","condition":"Good","location":"Downtown","imageUrl":"/images/bookshelf.jpg","comments":[],"userId":"seed-user","createdAt":"2026-09-16T16:58:35.935Z"},
   {"_id":"6aaacabbaccd0526e1e851e7","title":"Children's Bicycle","description":"16-inch wheel children's bicycle, suitable for ages 4-7. Blue color with training wheels included. Recently serviced.","category":"Outdoor","condition":"Good","location":"Suburbs","imageUrl":"/images/bicycle.jpg","comments":[],"userId":"seed-user","createdAt":"2026-09-16T16:58:35.935Z"},

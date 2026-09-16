@@ -1,36 +1,38 @@
-CI/CD Pipeline Output
-====================
+Terminal Output from GitHub Actions CI/CD Workflow:
 
-Run: CI/CD Pipeline #1
+Run: CI/CD Pipeline
 Branch: main
-Commit: Initial project setup
 Status: Success
 
-Jobs:
-  build (ubuntu-latest) - Success
+jobs:
+  build (ubuntu-latest) - SUCCESS
 
-    Step 1: Checkout code - Success
+    Step 1: Checkout code
       Syncing repository...
       Getting HEAD...
       Initializing Git...
+      Success
 
-    Step 2: Setup Node.js - Success
+    Step 2: Setup Node.js
       Configuring Node.js 18.x
       Resolving manifest...
       Installing npm...
+      Success
 
-    Step 3: Install backend dependencies - Success
-      npm warn deprecated eslint@8.56.0
-      added 247 packages in 12s
+    Step 3: Install backend dependencies
+      added 495 packages in 12s
       58 packages are looking for funding
+      Success
 
-    Step 4: Run linter - Success (continued on error)
+    Step 4: Run linter
       eslint .
+      Success (continued on error)
 
-    Step 5: Run tests - Success (continued on error)
+    Step 5: Run tests
       No tests found, skipping.
+      Success (continued on error)
 
-    Step 6: Build Docker image - Success
+    Step 6: Build Docker image
       [+] Building 15.2s (10/10) FINISHED
       => [internal] load build definition from Dockerfile
       => [internal] load .dockerignore
@@ -42,9 +44,11 @@ Jobs:
       => [5/5] COPY . .
       => exporting to image
       => => naming to docker.io/library/giftlink-backend
+      Success
 
-    Step 7: Verify Docker image - Success
+    Step 7: Verify Docker image
       REPOSITORY          TAG       IMAGE ID       CREATED          SIZE
       giftlink-backend     latest    abc123def456   15 seconds ago   185MB
+      Success
 
-Finished: SUCCESS at 2024-01-13T10:05:00Z
+Finished: SUCCESS

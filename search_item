@@ -1,7 +1,7 @@
-cURL Command:
+Terminal Command:
 curl -X GET "http://localhost:3000/api/search?q=kitchen&category=Kitchen"
 
-Output:
+Terminal Output:
 [
   {
     "_id": "6aaacabbaccd0526e1e851e8",
