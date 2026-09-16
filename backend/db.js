@@ -8,7 +8,13 @@ async function connectToDatabase() {
   if (db) return db;
 
   try {
-    client = new MongoClient(uri);
+    const options = {
+      ssl: true,
+      tlsAllowInvalidCertificates: false,
+      retryWrites: true,
+      w: 'majority'
+    };
+    client = new MongoClient(uri, options);
     await client.connect();
     console.log('Connected to MongoDB');
     db = client.db('giftlink');
