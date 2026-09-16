@@ -1,0 +1,30 @@
+cURL Command:
+curl -X GET "http://localhost:3000/api/search?q=kitchen&category=Kitchen"
+
+Output:
+[
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0e3",
+    "title": "Kitchen Stand Mixer",
+    "description": "5-quart stand mixer in red. Includes dough hook, flat beater, and wire whip. Works perfectly, upgrading to a larger model.",
+    "category": "Kitchen",
+    "condition": "Like New",
+    "location": "Midtown",
+    "imageUrl": "/images/mixer.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0e9",
+    "title": "Cooking Utensil Set",
+    "description": "20-piece cooking utensil set including spatulas, ladles, tongs, and measuring spoons. Stainless steel with silicone handles.",
+    "category": "Kitchen",
+    "condition": "Good",
+    "location": "Southside",
+    "imageUrl": "/images/utensils.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  }
+]

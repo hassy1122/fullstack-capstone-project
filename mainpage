@@ -1,0 +1,198 @@
+cURL Command:
+curl -X GET http://localhost:3000/api/gifts
+
+Output:
+[
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0e1",
+    "title": "Vintage Wooden Bookshelf",
+    "description": "Solid oak bookshelf with three shelves. Some minor scratches but overall in great condition. Perfect for a home office or living room.",
+    "category": "Furniture",
+    "condition": "Good",
+    "location": "Downtown",
+    "imageUrl": "/images/bookshelf.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0e2",
+    "title": "Children's Bicycle",
+    "description": "16-inch wheel children's bicycle, suitable for ages 4-7. Blue color with training wheels included. Recently serviced.",
+    "category": "Outdoor",
+    "condition": "Good",
+    "location": "Suburbs",
+    "imageUrl": "/images/bicycle.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0e3",
+    "title": "Kitchen Stand Mixer",
+    "description": "5-quart stand mixer in red. Includes dough hook, flat beater, and wire whip. Works perfectly, upgrading to a larger model.",
+    "category": "Kitchen",
+    "condition": "Like New",
+    "location": "Midtown",
+    "imageUrl": "/images/mixer.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0e4",
+    "title": "Queen Size Bed Frame",
+    "description": "Solid pine queen bed frame with slats. Assembly required. All hardware included. Moving and cannot take it with me.",
+    "category": "Furniture",
+    "condition": "Good",
+    "location": "Northside",
+    "imageUrl": "/images/bedframe.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0e5",
+    "title": "Stack of Mystery Novels",
+    "description": "Collection of 12 mystery novels including works by Agatha Christie and Arthur Conan Doyle. All paperbacks in readable condition.",
+    "category": "Books",
+    "condition": "Good",
+    "location": "Downtown",
+    "imageUrl": "/images/books.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0e6",
+    "title": "Indoor Plant Pot Set",
+    "description": "Set of 3 ceramic plant pots in white, blue, and green. Includes drainage holes and saucers. No chips or cracks.",
+    "category": "Garden",
+    "condition": "Like New",
+    "location": "Eastside",
+    "imageUrl": "/images/plantpots.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0e7",
+    "title": "Yoga Mat and Blocks",
+    "description": "Purple yoga mat (6mm thick) and 2 foam yoga blocks. Used for 3 months, well maintained and cleaned regularly.",
+    "category": "Sports",
+    "condition": "Good",
+    "location": "Midtown",
+    "imageUrl": "/images/yoga.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0e8",
+    "title": "Vintage Record Player",
+    "description": "Working vintage record player from the 1980s. Plays 33 and 45 RPM records. Includes a new stylus cartridge.",
+    "category": "Electronics",
+    "condition": "Fair",
+    "location": "Downtown",
+    "imageUrl": "/images/recordplayer.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0e9",
+    "title": "Cooking Utensil Set",
+    "description": "20-piece cooking utensil set including spatulas, ladles, tongs, and measuring spoons. Stainless steel with silicone handles.",
+    "category": "Kitchen",
+    "condition": "Good",
+    "location": "Southside",
+    "imageUrl": "/images/utensils.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0f0",
+    "title": "Desk Lamp with USB Port",
+    "description": "Modern LED desk lamp with adjustable brightness and color temperature. Includes built-in USB charging port.",
+    "category": "Electronics",
+    "condition": "Like New",
+    "location": "Westside",
+    "imageUrl": "/images/desklamp.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0f1",
+    "title": "Garden Tool Set",
+    "description": "5-piece garden tool set with trowel, pruner, weeder, cultivator, and hand rake. Ergonomic handles.",
+    "category": "Garden",
+    "condition": "Good",
+    "location": "Suburbs",
+    "imageUrl": "/images/gardentools.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0f2",
+    "title": "Toddler Clothing Bundle",
+    "description": "Assorted toddler clothing sizes 2T-3T. Includes shirts, pants, and onesies. Gently used, no stains or tears.",
+    "category": "Clothing",
+    "condition": "Good",
+    "location": "Northside",
+    "imageUrl": "/images/toddler.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0f3",
+    "title": "Board Game Collection",
+    "description": "Set of 5 board games: Monopoly, Scrabble, Clue, Risk, and Trivial Pursuit. All pieces complete and in good condition.",
+    "category": "Toys",
+    "condition": "Good",
+    "location": "Eastside",
+    "imageUrl": "/images/boardgames.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0f4",
+    "title": "Vacuum Cleaner",
+    "description": "Bagless upright vacuum cleaner with HEPA filter. Includes all original attachments. Powerful suction, no issues.",
+    "category": "Appliances",
+    "condition": "Good",
+    "location": "Midtown",
+    "imageUrl": "/images/vacuum.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0f5",
+    "title": "Camping Tent 4-Person",
+    "description": "Four-person dome tent. Easy setup with color-coded poles. Includes rainfly and carry bag. Used twice, excellent condition.",
+    "category": "Outdoor",
+    "condition": "Like New",
+    "location": "Westside",
+    "imageUrl": "/images/tent.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  },
+  {
+    "_id": "65a1b2c3d4e5f6a7b8c9d0f6",
+    "title": "Art Supplies Kit",
+    "description": "Complete art supplies kit with acrylic paints, brushes, canvas boards, palette, and mixing cups. Great for beginners.",
+    "category": "Hobby",
+    "condition": "Like New",
+    "location": "Downtown",
+    "imageUrl": "/images/artsupplies.jpg",
+    "userId": "seed-user",
+    "createdAt": "2024-01-13T10:00:00.000Z",
+    "comments": []
+  }
+]

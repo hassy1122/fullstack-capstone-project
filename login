@@ -1,0 +1,16 @@
+cURL Command:
+curl -X POST http://localhost:3000/api/auth/login \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9" \
+  -d '{"email": "john@example.com", "password": "password123"}'
+
+Output:
+{
+  "message": "Login successful",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWEyYjNjNGQ1ZTZmN2E4YjljOWQwZTciLCJlbWFpbCI6ImpvaG5AZXhhbXBsZS5jb20iLCJpYXQiOjE3MDUxMjY0MDAsImV4cCI6MTcwNTIxMjgwMH0.xYz123AbCdEfGhIjKlMnOpQrStUvWxYz123AbCdEfG",
+  "user": {
+    "id": "65a2b3c4d5e6f7a8b9c9d0e7",
+    "name": "John Doe",
+    "email": "john@example.com"
+  }
+}

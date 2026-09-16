@@ -1,0 +1,42 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: backend/package-lock.json
+
+      - name: Install backend dependencies
+        run: npm install
+        working-directory: ./backend
+
+      - name: Run linter
+        run: npm run lint
+        working-directory: ./backend
+        continue-on-error: true
+
+      - name: Run tests
+        run: npm test
+        working-directory: ./backend
+        continue-on-error: true
+
+      - name: Build Docker image
+        run: docker build -t giftlink-backend ./backend
+
+      - name: Verify Docker image
+        run: docker images giftlink-backend

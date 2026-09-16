@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:6
+    container_name: giftlink-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: giftlink
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: giftlink-backend
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - MONGODB_URI=mongodb://mongodb:27017/giftlink
+      - JWT_SECRET=giftlink_jwt_secret_key_2024
+      - JWT_EXPIRATION=24h
+      - NODE_ENV=development
+    depends_on:
+      - mongodb
+    restart: unless-stopped
+
+volumes:
+  mongodb_data:
