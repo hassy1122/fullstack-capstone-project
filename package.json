@@ -1,0 +1,13 @@
+{
+  "name": "giftlink",
+  "version": "1.0.0",
+  "description": "GiftLink - Give what you don't need. Find what you do.",
+  "scripts": {
+    "start": "node backend/index.js",
+    "install-deps": "cd backend && npm install",
+    "seed": "cd backend && node seed.js"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
